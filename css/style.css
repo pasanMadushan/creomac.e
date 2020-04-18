@@ -1,0 +1,11 @@
+
+.carousel{
+  margin-top: 0px;
+}
+.carousel-inner{
+  height: 250px;
+}
+.carousel-caption{
+  color: #fff;
+  top: 50%;
+}
