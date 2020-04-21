@@ -6,7 +6,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Creomac Electronics</title>
   <!-- MDB icon -->
-  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/logo_web.png" type="image/x-icon">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
   <!-- Google Fonts Roboto -->
@@ -112,7 +112,7 @@
   <!--Navbar-->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
     <div class="container">
-      <a class="navbar-brand" href="#" style="font-family: 'Monoton', cursive; font-size: 30px;"><strong>C</strong></a>
+      <a class="navbar-brand" href="#" style="font-family: 'Monoton', cursive; font-size: 30px;"><img width="40px" src="images/logo_web.png" alt=""></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7"
         aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -149,9 +149,54 @@
             <h1 class="h1-reponsive white-text text-uppercase font-weight-bold mb-0 pt-md-5 pt-5 wow fadeInDown"
               data-wow-delay="0.3s"><strong>Creomac Electronics</strong></h1>
             <hr class="hr-light my-4 wow fadeInDown" data-wow-delay="0.4s">
-            <h5 class="text-uppercase mb-4 white-text wow fadeInDown" data-wow-delay="0.4s"><strong>Arduino projects</strong></h5>
+            <h5 class="text-uppercase mb-4 white-text wow fadeInDown" data-wow-delay="0.4s"><strong>Arduino - Micro-bit</strong></h5>
            
-            <a class="btn btn-outline-white btn-rounded  wow fadeInDown" data-wow-delay="0.4s" style="letter-spacing: 3px">View Blog</a>
+     
+           
+            
+						<!--  modal-->
+
+								   <!-- Button trigger modal-->
+						
+						<a id="play-video" class="video-play-button" data-toggle="modal" data-target="#modalYT">
+		 					 <span></span>
+							</a>
+						<div id="video-overlay" class="video-overlay">
+		 					 <a class="video-overlay-close">&times;</a>
+							</div>
+
+					
+						<!--Modal: modalYT-->
+						<div class="modal fade" id="modalYT" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+						  aria-hidden="true">
+						  <div class="modal-dialog modal-lg" role="document">
+
+							<!--Content-->
+							<div class="modal-content">
+
+							  <!--Body-->
+							  <div class="modal-body mb-0 p-0">
+
+								<div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+								  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/A3PDXmYoF5U"
+									allowfullscreen></iframe>
+								</div>
+
+							  </div>
+
+							 
+							</div>
+							<!--/.Content-->
+
+						  </div>
+						</div>
+						<!--Modal: modalYT-->
+
+								  <!--  modal--> 
+            
+         
+                    
+            
           </div>
           <!--Grid column-->
         </div>
@@ -184,7 +229,7 @@
       <div class="col-md-6 d-flex align-items-center ml-2">
         <div>
           
-          <h3 class="font-weight-bold mb-4" style="color:#45566C; text-align: center">Who Are We??</h3>
+          <h3 class="font-weight-bold mb-4 wow slideInUp" style="color:#45566C; text-align: center">Who Are We??</h3>
 
         	<p style="color: #45566C">We are a group of students who are experts in Arduino  and we are volunteering to help to the beginners. We are very enthusiastic to do new inventions and to solve problems coming when coding and hardware Arduino or micro:bit. You can solve problems by contacting us via gmail</p>
 
@@ -215,14 +260,14 @@
  <div class="container-fluid text-center pb-5" style="background-color:#45566C ">
  
         
-  <h2 class="h1 text-center text-uppercase font-weight-bold mb-3 pt-5" style="color:#ECECEC; ">Recent Posts</h2>
+  <h2 class="h1 text-center text-uppercase font-weight-bold mb-3 pt-5" style="color:#ECECEC; ">Recent Projects</h2>
 
 <!--Section description-->
-	<p class="text-center text-uppercase font-weight-bold" style="color: #ECECEC">Visit out Blog to view all arduino projects</p>
+	<p class="text-center text-uppercase font-weight-bold" style="color: #ECECEC">Visit projects page to view all arduino projects</p>
 
-
+<a href="blog.html">
 <button type="button" class="btn  waves-effect" style="border: 2px solid white"><i class="fas fa-book-open" style="color: white" ></i></button>
-
+</a>
 
 <div class="container mt-4">
 
@@ -234,22 +279,21 @@
 
         <!-- Featured image -->
         <div class="view overlay rounded z-depth-2 " style="background-color: aliceblue;">
-          <img class="img-fluid" src="images/742172.jpg" alt="Sample image"> 
+          <img class="img-fluid" src="images/projects/blink.jpg" alt="first project"> 
           
               
            <!-- Category -->
-        <a href="#!" class="pink-text">
-          <h6 class="font-weight-bold mb-3"><i class="fas fa-map pr-2"></i>Adventure</h6>
+        <a href="#!" class="blue-text">
+          <h6 class="font-weight-bold mb-3">Arduino</h6>
         </a>
         <!-- Post title -->
-        <h4 class="font-weight-bold mb-3"><strong>Title of the news</strong></h4>
+        <h4 class="font-weight-bold mb-3"><strong>Blinking LED using Arduino</strong></h4>
         <!-- Post data -->
-        <p>by <a class="font-weight-bold">Billy Forester</a>, 15/07/2018</p>
+        <p>by <a class="font-weight-bold">Nadina Weerasinghe</a></p>
         <!-- Excerpt -->
-        <p class="dark-grey-text">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit
-          quo minus id quod maxime placeat facere possimus voluptas.</p>
+        <p class="dark-grey-text">Blinking LED by providing Arduino inputs.</p>
         <!-- Read more button -->
-        <a class="btn btn-pink btn-rounded btn-md">Read more</a>
+        <a class="btn btn-pink btn-rounded btn-md" href="blog.html">Read more</a>
                                                           
         </div>
 

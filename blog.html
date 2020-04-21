@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Blog</title>
+  <title>Projects</title>
   <!-- MDB icon -->
-  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/logo_web.png" type="image/x-icon">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
   <!-- Google Fonts Roboto -->
@@ -46,18 +46,17 @@
     }
   }
 
+ 
   .top-nav-collapse {
-    background-color: #30445F ;
+    background-color: #30445F !important;
   }
-	 
-	   .navbar {
-    background: #30445F !important;
-   }
 
-  
+  .navbar:not(.top-nav-collapse) {
+    background: transparent !important;
+  }
 
   @media (max-width: 991px) {
-   .navbar {
+   .navbar:not(.top-nav-collapse) {
     background: #30445F !important;
    }
   }
@@ -85,12 +84,13 @@
 	 
 </style>
 
+
 <!-- Main navigation -->
 <header>
   <!--Navbar-->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
     <div class="container">
-      <a class="navbar-brand" href="#" style="font-family: 'Monoton', cursive; font-size: 30px;"><strong>C</strong></a>
+      <a class="navbar-brand" href="#" style="font-family: 'Monoton', cursive; font-size: 30px;"><img width="40px" src="images/logo_web.png" alt=""></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7"
         aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -100,8 +100,11 @@
           <li class="nav-item ">
             <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="overview.html">Overview</a>
+          </li>
           <li class="nav-item active">
-            <a class="nav-link" href="blog.html">Blog</a>
+            <a class="nav-link" href="blog.html">Projects</a>
           </li>
           <li class="nav-item ">
             <a class="nav-link" href="contact_us.html">Contact Us</a>
@@ -111,79 +114,38 @@
     </div>
   </nav>
   <!-- Navbar -->
-
+  <!-- Full Page Intro -->
+  <div class="view jarallax" data-jarallax="{'speed': 0.2}" style="background-image: url(images/projects.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center; height: 250px;">
+    <!-- Mask & flexbox options-->
+    <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+      <!-- Content -->
+      <div class="container">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-md-12 mb-4 white-text text-center">
+            <h1 class="h1-reponsive white-text text-uppercase font-weight-bold mb-0 pt-md-5 pt-5 wow fadeInDown"
+              data-wow-delay="0.3s"><strong>View Our Projects</strong></h1>
+            
+          </div>
+          <!--Grid column-->
+        </div>
+        
+        <!--Grid row-->
+      </div>
+      <!-- Content -->
+    </div>
+    <!-- Mask & flexbox options-->
+  </div>
+  <!-- Full Page Intro -->
 </header>
 <!-- Main navigation -->
-<div class="container-fluid" style="height: 75px;"></div>
- 
- 
- 
- 
- <!--Carousel Wrapper-->
-<div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
-  <!--Indicators-->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-2" data-slide-to="1"></li>
-    <li data-target="#carousel-example-2" data-slide-to="2"></li>
-  </ol>
-  <!--/.Indicators-->
-  <!--Slides-->
-  <div class="carousel-inner" role="listbox" style="height: 400px;">
-    <div class="carousel-item active">
-      <div class="view">
-        <img class="d-block w-100" src="images/cover.jpg"
-          alt="First slide">
-        <div class="mask rgba-black-strong"></div>
-      </div>
-      <div class="carousel-caption">
-        <h3 class="h3-responsive">Light mask</h3>
-        <p>First text</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <!--Mask color-->
-      <div class="view">
-        <img class="d-block w-100"  src="images/cover.jpg"
-          alt="Second slide">
-        <div class="mask rgba-black-strong"></div>
-      </div>
-      <div class="carousel-caption">
-        <h3 class="h3-responsive">Strong mask</h3>
-        <p>Secondary text</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <!--Mask color-->
-      <div class="view">
-        <img class="d-block w-100"  src="images/cover.jpg"
-          alt="Third slide">
-        <div class="mask rgba-black-strong"></div>
-      </div>
-      <div class="carousel-caption">
-        <h3 class="h3-responsive">Slight mask</h3>
-        <p>Third text</p>
-      </div>
-    </div>
-  </div>
-  <!--/.Slides-->
-  <!--Controls-->
-  <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-  <!--/.Controls-->
-</div>
-<!--/.Carousel Wrapper-->
- 
  
 
- 
- 
+
+
+  
+
  
  
  
@@ -194,10 +156,13 @@
   <!--Section: Content-->
   <section class="dark-grey-text">
 
-    <!-- Section heading -->
-    <h2 class="text-center font-weight-bold mb-4 pb-2">Recent posts</h2>
-    <!-- Section description -->
-    <p class="text-center mx-auto w-responsive mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur veniam.</p>
+    
+    
+    
+
+    
+    <div class="p-5">
+    
 
     <!-- Grid row -->
     <div class="row align-items-center">
@@ -207,7 +172,7 @@
 
         <!-- Featured image -->
         <div class="view overlay rounded z-depth-2 mb-lg-0 mb-4">
-          <img class="img-fluid" src="images/float.jpg" alt="Sample image">
+          <img class="img-fluid" src="images/projects/blink.jpg" alt="Sample image">
           <a>
             <div class="mask rgba-white-slight"></div>
           </a>
@@ -220,18 +185,154 @@
       <div class="col-lg-7">
 
         <!-- Category -->
-        <a href="#!" class="green-text">
-          <h6 class="font-weight-bold mb-3"><i class="fas fa-utensils pr-2"></i>Food</h6>
+        <a href="#!" class="blue-text">
+          <h6 class="font-weight-bold mb-3">Arduino</h6>
         </a>
         <!-- Post title -->
-        <h4 class="font-weight-bold mb-3"><strong>Title of the news</strong></h4>
+        <h4 class="font-weight-bold mb-3"><strong>Blinking LED using Arduino</strong></h4>
         <!-- Excerpt -->
-        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
-          placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus et aut officiis debitis.</p>
+        <p>Blinking LED by providing Arduino inputs.</p>
         <!-- Post data -->
-        <p>by <a><strong>Carine Fox</strong></a>, 19/08/2018</p>
+        <p>by <a><strong>Nadina Weerasinghe</strong></a></p>
         <!-- Read more button -->
-        <a class="btn btn-success btn-md btn-rounded mx-0">Read more</a>
+        
+<!--  ===========================   modal   ==============================================-->
+        
+        <a class="btn btn-primary btn-md btn-rounded mx-0" data-toggle="modal" data-target="#centralModalSm">Read more</a>
+        
+			<!-- Central Modal Small -->
+			<div class="modal fade" id="centralModalSm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+			  aria-hidden="true" style="background-color:#ECECEC ">
+
+			  <!-- Change class .modal-sm to change the size of the modal -->
+			  <div class="modal-dialog modal-fluid" role="document" style="background-color:#ECECEC ">
+
+
+				<div class="modal-content" style="background-color:#ECECEC ">
+				  
+				  <div class="modal-body">
+				  
+				  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					  <span aria-hidden="true">&times;</span>
+					</button>
+					
+					<!--*************************-->
+					
+					
+					
+							<div class="container mt-5" >
+
+
+							  <!--Section: Content-->
+							  <section class="mx-md-5 dark-grey-text">
+
+								<!-- Grid row -->
+								<div class="row">
+
+								  <!-- Grid column -->
+								  <div class="col-md-12">
+
+									<!-- Card -->
+									<div class="card card-cascade wider reverse">
+
+									  <!-- Card image -->
+									  <div class="view view-cascade overlay">
+										<img class="card-img-top" src="images/projects/blink.jpg" height="450px" alt="Sample image">
+										<a href="#!">
+										  <div class="mask rgba-white-slight"></div>
+										</a>
+									  </div>
+
+									  <!-- Card content -->
+									  <div class="card-body card-body-cascade text-center">
+
+										<!-- Title -->
+										<h3 class="font-weight-bold"><a>Blinking LED using Arduino</a></h3>
+										<!-- Data -->
+										<p>Written by <a><strong>Nadina Weerasinghe</strong></a></p>
+										<hr style="height: 15px;">
+										
+										<div class="pl-4" style="text-align: left">
+									  <h3> Arduino Program Code </h3>
+									<div class="p-5">
+										<pre>
+									  	<code>
+											
+	// LED is connected to the pin 13 of Arduino board										
+	int led = 13;				  // initializing variable
+	
+	void setup(){
+		pinMode (led, OUTPUT);	  // initialize the digital pin as output
+	}
+		
+	void loop(){
+	
+		digitalWrite(led,HIGH);   // turn LED on
+		delay(1000);			  // wait for a second
+		digitalWrite(led,LOW);	  // turn LED off
+		delay(1000);			  // wait for a second
+	
+		}
+																																													</code>
+									  	</pre>
+										
+									</div>
+									  	
+									  	
+									 
+									  	
+									  </div>
+								  
+								  
+								  
+								  
+								  
+									  </div>
+									  <!-- Card content -->
+
+									</div>
+									<!-- Card -->
+
+									<!-- Excerpt -->
+									<div>
+
+									  
+									  
+									</div>
+
+								  </div>
+								  <!-- Grid column -->
+
+								</div>
+								<!-- Grid row -->
+
+								
+
+							  </section>
+							  <!--Section: Content-->
+
+
+							</div>
+					
+					
+					<!--*************************-->
+					
+				  </div>
+				 
+					
+					
+				 
+				</div>
+			  </div>
+			</div>
+			<!-- Central Modal Small -->
+
+        
+        
+        
+<!--  ===========================   modal   ==============================================-->        
+        
+        
 
       </div>
       <!-- Grid column -->
@@ -329,7 +430,7 @@
 
     <hr class="my-5">
     
-    
+    </div>
     
   </section>
   <!--Section: Content-->
