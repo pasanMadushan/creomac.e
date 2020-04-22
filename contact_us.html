@@ -72,6 +72,115 @@
 		 background-color: #ECECEC;
 	 }
 	 
+	/* call us icons   */ 
+	 
+	 .icon {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  margin-left: 12px;
+  margin-right: 12px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.icon::before, .icon::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  border-radius: 30px;
+}
+.icon i {
+  position: relative;
+  color: #30445F;
+  font-size: 30px;
+  margin-top: 15px;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+	 
+	 .icon i:hover{
+		 color: #FFFFFF
+	 }	 
+	 
+
+.icon-fill::before {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  box-shadow: inset 0 0 0 1px #16A085;
+}
+.icon-fill:hover::before {
+  box-shadow: inset 0 0 0 60px #16A085;
+}
+
+.icon-enter::after {
+  box-shadow: inset 0 0 0 1px #EB9532;
+}
+.icon-enter::before {
+  border-radius: 0;
+  margin-left: -100%;
+  box-shadow: inset 0 0 0 60px #EB9532;
+}
+.icon-enter:hover::before {
+  margin-left: 0;
+}
+
+.icon-expand::after {
+  box-shadow: inset 0 0 0 1px #C82647;
+}
+.icon-expand::before {
+  background: #C82647;
+  box-shadow: inset 0 0 0 60px #2d2c3e;
+}
+.icon-expand:hover::before {
+  box-shadow: inset 0 0 0 1px #2d2c3e;
+}
+
+.icon-collapse::before {
+  border-radius: 0;
+}
+.icon-collapse:hover::before {
+  box-shadow: inset 0 30px 0 0 #8CC63F, inset 0 -30px 0 0 #8CC63F;
+}
+.icon-collapse::after {
+  box-shadow: inset 0 0 0 1px #8CC63F;
+}
+
+.icon-rotate {
+  box-shadow: inset 0 0 0 1px #30445F;
+}
+.icon-rotate::after, .icon-rotate::before {
+  border: 0px solid transparent;
+}
+.icon-rotate:hover::before {
+  -webkit-transition: border-top-width 0.3s ease, border-top-color 0.3s ease;
+  transition: border-top-width 0.3s ease, border-top-color 0.3s ease;
+  border-width: 60px;
+  border-top-color: #30445F;
+}
+.icon-rotate:hover::after {
+  -webkit-transition: border-left-width 0.3s ease, border-left-color 0.3s ease;
+  transition: border-left-width 0.3s ease, border-left-color 0.3s ease;
+  border-width: 60px;
+  border-left-color: #30445F;
+}
+.icon-rotate:hover {
+  -webkit-transition: background 0.001s ease 0.3s;
+  transition: background 0.001s ease 0.3s;
+  background: #30445F;
+}
+.icon-rotate i {
+  z-index: 1;
+}
+	 
+	/* call us icons   */  
+	
 
 </style>
 
@@ -80,7 +189,7 @@
   <!--Navbar-->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
     <div class="container">
-      <a class="navbar-brand" href="#" style="font-family: 'Monoton', cursive; font-size: 30px;"><img width="40px" src="images/logo_web.png" alt=""></a>
+      <a class="navbar-brand" href="index.html" style="font-family: 'Monoton', cursive; font-size: 30px;"><img width="40px" src="images/logo_web.png" alt=""></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7"
         aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -133,7 +242,16 @@
  
 
  
+<div class="container text-center" style="background-color: #ECECEC">
+	
+	 <p class="m-5   text-center">If you're struggling with Arudino/Micro-bit and any other electronic project, simply contact us through this form. We will get into you via email as short as possible. Also we are looking forward to your commets and suggestions about out community. </p>
+	<div class="text-center">
+ 	<iframe  src="https://docs.google.com/forms/d/e/1FAIpQLSd4tJvxyUovGTeFOI4Xz6j_LFLeRm7xZENqIYKoKCu5_xvsXw/viewform?embedded=true" width="90%" height="920" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+ 	</div>
+ </div>
  
+ 
+ <hr class="h-auto">
  
 
   <div class="container mt-5" style="background-color: #ECECEC">
@@ -161,89 +279,58 @@
       <!-- Section heading -->
      
       <!-- Section description -->
-      <p class="text-center w-responsive mx-auto pb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam
-        eum porro a pariatur veniam.</p>
-
+     
       <!-- Grid row -->
-      <div class="row">
-
-        <!-- Grid column -->
-        <div class="col-lg-5 mb-lg-0 pb-lg-3 mb-4">
-
-          <!-- Form with header -->
-          <div class="card">
-            <div class="card-body">
-              <!-- Header -->
-              <div class="form-header  accent-1">
-                <h3 class="mt-2"><i class="fas fa-envelope"></i> Write to us:</h3>
-              </div>
-              <p class="dark-grey-text">We'll write rarely, but only the best content.</p>
-              <!-- Body -->
-              <div class="md-form">
-                <i class="fas fa-user prefix grey-text"></i>
-                <input type="text" id="form-name" class="form-control">
-                <label for="form-name">Your name</label>
-              </div>
-              <div class="md-form">
-                <i class="fas fa-envelope prefix grey-text"></i>
-                <input type="text" id="form-email" class="form-control">
-                <label for="form-email">Your email</label>
-              </div>
-              <div class="md-form">
-                <i class="fas fa-tag prefix grey-text"></i>
-                <input type="text" id="form-Subject" class="form-control">
-                <label for="form-Subject">Subject</label>
-              </div>
-              <div class="md-form">
-                <i class="fas fa-pencil-alt prefix grey-text"></i>
-                <textarea id="form-text" class="form-control md-textarea" rows="3"></textarea>
-                <label for="form-text">Send message</label>
-              </div>
-              <div class="text-center">
-                <button class="btn btn-light-blue">Submit</button>
-              </div>
-            </div>
-          </div>
-          <!-- Form with header -->
-
+      <div class="row" style="z-index: 5">
+   
+           <div class="col-lg-6 justify-content-center p-5 align-content-stretch">
+          <!-- Buttons-->
+          		<table class="align-content-stretch">
+          			<tr class="m-3">
+          				<td class="align-middle">
+          					<div class="text-center icon icon-rotate"><i class="fa fa-phone-alt"></i></div>
+          				</td>
+          				<td class="align-middle">
+          					<h4 class="buttonedit align-baseline">077xxxxxxx</h4>
+          				</td>
+          			</tr>
+          			<tr height="10em"></tr>
+          			<tr class="m-3">
+          				<td class="align-middle">
+          					<div class="text-center icon icon-rotate"><i class="fa fa-envelope"></i></div>
+          				</td>
+          				<td class="align-middle">
+          					<h4 class="buttonedit">creomac.e@gmail.com</h4>
+          				</td>
+          			</tr>
+          			<tr height="10em"></tr>
+          			<tr class="m-3">
+          				<td class="align-middle">
+          					<div class="text-center icon icon-rotate"><i class="fa fa-location-arrow"></i></div>
+          				</td>
+          				<td class="align-middle">
+          					<h4 class="buttonedit">441/4C, Kalegana, Galle</h4>
+          				</td>
+          			</tr>
+          			
+          		</table>
+          	
+       
         </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-lg-7">
+        
+        
+         <!-- Grid column -->
+        <div class="col-lg-6 ">
 
           <!--Google map-->
-          <div id="map-container-section" class="z-depth-1-half map-container-section mb-4" style="height: 400px">
+          <div id="map-container-section" class="z-depth-1-half map-container-section mb-4 mt-4" style="height: 400px">
             <iframe src="https://maps.google.com/maps?q=Manhatan&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0"
               style="border:0" allowfullscreen></iframe>
           </div>
-          <!-- Buttons-->
-          <div class="row text-center">
-            <div class="col-md-4">
-              <a class="btn-floating blue accent-1">
-                <i class="fas fa-map-marker-alt"></i>
-              </a>
-              <p>New York, 94126</p>
-              <p class="mb-md-0">United States</p>
-            </div>
-            <div class="col-md-4">
-              <a class="btn-floating blue accent-1">
-                <i class="fas fa-phone"></i>
-              </a>
-              <p>+ 01 234 567 89</p>
-              <p class="mb-md-0">Mon - Fri, 8:00-22:00</p>
-            </div>
-            <div class="col-md-4">
-              <a class="btn-floating blue accent-1">
-                <i class="fas fa-envelope"></i>
-              </a>
-              <p>info@gmail.com</p>
-              <p class="mb-0">sale@gmail.com</p>
-            </div>
+          
           </div>
-
-        </div>
+        
+        
         <!-- Grid column -->
 
       </div>
@@ -256,7 +343,26 @@
   </div>
  
  
+   <div class="container my-5 py-5 z-depth-1">
  
+
+    <!--Section: Content-->
+    <section class="px-md-5 mx-md-5 text-center dark-grey-text">
+
+      <p class="font-weight-bold">Follow us on:</p>
+
+      <!--Facebook-->
+      <a href="https://www.facebook.com/Creomac-robotics-group-101169314911018/" class="mx-3" role="button"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="mx-3" role="button"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="mx-3" role="button"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#" class="mx-3" role="button"><i class="fab fa-instagram"></i></a>
+      
+
+    </section>
+    <!--Section: Content-->
+
+
+  </div>
  
  
 
